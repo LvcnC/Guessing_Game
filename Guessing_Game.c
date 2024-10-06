@@ -6,7 +6,6 @@
 
 // GUESSING GAME!
 
-
 struct Player {
     char name[15];
     int lives;
@@ -38,17 +37,16 @@ int main()
         if(IsNumber(answer) == 0){
 
             num = atoi(answer); // turn the "stringed"number into an actual number
-            //num = CheckPositive(num); // turn it into positives
 
             if (num <= 0 || num > 10){
                 printf("The secret number is between 1 and 10\n");
-            }else if(num == randomNumber){
+            }else if (num == randomNumber){
                 printf("You guessed, the secret number is %d\n", num);
                 player1.HasWon = true;
             } else if (num < randomNumber){
                 printf("The secret number is higher!\n");
                 player1.lives--;
-            } else if(num > randomNumber){
+            } else {
                 printf("The secret number is lower!\n");
                 player1.lives--;
             } 
