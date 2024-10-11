@@ -1,9 +1,14 @@
 #include <stdio.h>
-#include "drawTable.c"
-
+#include "DrawTable.c"
+#include "StartGame.c"
+// X -> odd numbers
+// O -> even numbers
 int main(void){
 
-    drawTable();
-    
+    DrawTable();
+    //printf("Enter the 'X': ");
+    //scanf("%")
+    StartGame("#");
+
     return 0;
 }

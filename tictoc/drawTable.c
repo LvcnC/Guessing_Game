@@ -1,9 +1,12 @@
 #include <stdio.h> 
-void drawTable(){
+void DrawTable(){
 
     int orizLength = 10;
     int blankSpace = 8;
     const int OVERLENGTH = 2;
+    char filler = 'A';
+    int turn = 0;
+    //char sign1 = '#';
 
 // this is how many times it has to repeat the loop (only twice)
     for(int k = 0; k <= OVERLENGTH; k++){
@@ -13,11 +16,16 @@ void drawTable(){
         for(int j = 0; j <= blankSpace; j++){
             
             if(j == blankSpace / blankSpace || j == blankSpace / 2 || j == blankSpace - 1){
-                printf("#");
+
+                printf("%c", filler);
+                filler++;
+                printf("%i", turn);
+                turn++;
+
+
             }else{
                 printf(" ");
             }
-
             // once it reaches 1/3 of the entire length || it's the entire length
                 // write "|"
             if(j == blankSpace / 3 || j == (2 * blankSpace) / 3){
