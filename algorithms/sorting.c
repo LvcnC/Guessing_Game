@@ -38,6 +38,6 @@ int main(void){
     }
     printf("%s has the highest votes: %i\n", winner, highest_vote);
 
-*/
+
 
 }
