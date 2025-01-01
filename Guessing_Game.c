@@ -7,7 +7,6 @@
 // GUESSING GAME!
 
 struct Player {
-    char name[15];
     int lives;
     bool HasWon;
 };
